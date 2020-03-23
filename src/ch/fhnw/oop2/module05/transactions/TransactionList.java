@@ -106,9 +106,9 @@ public final class TransactionList {
 	 */
 	public int highestValue() {
         return allTransactions
-        		.stream()
-        		.map(t->t.getValue())
-                .max(Comparator.comparing(Integer::valueOf))
-        		.get();
+			.stream()
+			.map(t->t.getValue())
+		    .max(Comparator.comparing(Integer::valueOf))
+			.get();
 	}
 }
